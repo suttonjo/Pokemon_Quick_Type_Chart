@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <style>
+    body {
+      font-family: Verdana;
+    }
+    .button {
+      background-color: #02cc82; /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    table {
+    width: 200px;
+    border: 1px black solid;
+    }
+
+    td {
+      border: 1px gray solid;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="typeout.js"></script>
+</head>
+
+<body>
+  <label for="size">Type 1:</label>
+    <select id="first" name="first">
+      <option style="background-color:#bbb9b9" value=0>Normal</option>
+      <option style="background-color:#ee7f34" value=1>Fire</option>
+      <option style="background-color:#548aee" value=2>Water</option>
+      <option style="background-color:#65df59" value=3>Grass</option>
+      <option style="background-color:#ffed48" value=4>Electric</option>
+      <option style="background-color:#91fbff" value=5>Ice</option>
+      <option style="background-color:#831717" value=6>Fighting</option>
+      <option style="background-color:#7921c2" value=7>Poison</option>
+      <option style="background-color:#ceb669" value=8>Ground</option>
+      <option style="background-color:#a494df" value=9>Flying</option>
+      <option style="background-color:#e065cc" value=10>Psychic</option>
+      <option style="background-color:#9cc954" value=11>Bug</option>
+      <option style="background-color:#bda052" value=12>Rock</option>
+      <option style="background-color:#603d88" value=13>Ghost</option>
+      <option style="background-color:#4715ff" value=14>Dragon</option>
+      <option style="background-color:#383025" value=15>Dark</option>
+      <option style="background-color:#9b9db1" value=16>Steel</option>
+      <option style="background-color:#f1a4d1" value=17>Fairy</option>
+    </select>
+
+    <label for="color">Type 2:</label>
+    <select id="second" name="second">
+      <option value=18>None</option>
+      <option style="background-color:#bbb9b9" value=0>Normal</option>
+      <option style="background-color:#ee7f34" value=1>Fire</option>
+      <option style="background-color:#548aee" value=2>Water</option>
+      <option style="background-color:#65df59" value=3>Grass</option>
+      <option style="background-color:#ffed48" value=4>Electric</option>
+      <option style="background-color:#91fbff" value=5>Ice</option>
+      <option style="background-color:#831717" value=6>Fighting</option>
+      <option style="background-color:#7921c2" value=7>Poison</option>
+      <option style="background-color:#ceb669" value=8>Ground</option>
+      <option style="background-color:#a494df" value=9>Flying</option>
+      <option style="background-color:#e065cc" value=10>Psychic</option>
+      <option style="background-color:#9cc954" value=11>Bug</option>
+      <option style="background-color:#bda052" value=12>Rock</option>
+      <option style="background-color:#603d88" value=13>Ghost</option>
+      <option style="background-color:#4715ff" value=14>Dragon</option>
+      <option style="background-color:#383025" value=15>Dark</option>
+      <option style="background-color:#9b9db1" value=16>Steel</option>
+      <option style="background-color:#f1a4d1" value=17>Fairy</option>
+    </select><br><button id="enter", class="button", onclick="Calculate()">Enter</button>
+
+    <table id="typeTable"></table>
+
+</body>
+</html>
