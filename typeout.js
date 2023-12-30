@@ -32,6 +32,7 @@ var types = ["Normal", "Fire","Water","Grass","Electric","Ice","Fighting","Poiso
 // create table
 var html = "";
 $(document).ready(function(){
+    html += "<caption>ATTACKING</caption>"
     $.each(types, function(index,type){
         html += "<tr>";
         html += "<td class='" +type + "'>"+type+"</td>";
@@ -47,6 +48,9 @@ $(document).ready(function(){
     $("#enter").click(function(){
         var first = document.querySelector('#first').value;
         var second = document.querySelector('#second').value;
+        if(first == second){
+            second = 18;
+        }
 
         $.each(types, function(index,type){
             var type1_effect = type_chart[index][first];

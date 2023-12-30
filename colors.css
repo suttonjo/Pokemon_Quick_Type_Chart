@@ -1,8 +1,33 @@
 body {
     font-family: Verdana;
-  }
-  .button {
-    background-color: #02cc82; /* Green */
+    background-color:#253a3a;
+}
+h1{
+    color:white;
+    text-shadow: 0 0 5px #c08532;
+}
+.drop{
+    text-shadow: 0 0 5px #c08532;
+    font-family: Verdana;
+    font-weight: bold;
+    color:white;
+    background-color:#253a3a;
+    font-size: 20px;
+    border-color: #253a3a;
+}
+caption{
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #c08532;
+}
+option{
+    font-family: Verdana;
+    font-weight: bold;
+    border-color: #253a3a;
+}
+.button {
+    font-weight: bold;
+    background-color: #7ba59a; /* Green */
     border: none;
     color: white;
     padding: 20px;
@@ -10,72 +35,52 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 20px;
     cursor: pointer;
     border-radius: 4px;
-  }
-  table {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.button:hover {
+    background-color: #6c9187
+}
+
+.button:active {
+    background-color: #65867e;
+    transform: translateY(4px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
     color:white;
     font-weight: bold;
     font-family: Verdana;
-    border-collapse: collapse;
-    margin: 25px 0;
-    font-size: 2em;
-    font-family: sans-serif;
+    border-collapse: separate;
+    font-size: 1.9em;
     min-width: 300px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-  }
-
-  td {
-    border: 1px gray solid;
-  }
-  #effects{
+    border-spacing: 0
+}
+#effects{
     color:black;
     text-align: center;
     width: 80px;
-  }
-
-
-
-.Normal{
-    background-color:#bbb9b9
 }
-.Fire{
-    background-color:#ee7f34
-}
-.Water{
-    background-color:#548aee
-}
-.Grass{
-    background-color:#65df59
-}
-.Electric{
-    background-color:#e6d224
-}
-.Ice{
-    background-color:#7edadd
-}
-.Fighting{
-    background-color:#831717
-}
-.Poison{
-    background-color:#7921c2
-}
-.Ground{
-    background-color:#ceb669
-}
-.Flying{
-    background-color:#a494df
-}
-.Psychic{
-    background-color:#e065cc
-}
-.Bug{
-    background-color:#9cc954
-}
-.Rock{
-    background-color:#bda052
-}
+.Normal{background-color:#bbb9b9}
+.Fire{background-color:#ee7f34}
+.Water{background-color:#548aee}
+.Grass{background-color:#65df59}
+.Electric{background-color:#e6d224}
+.Ice{background-color:#7edadd}
+.Fighting{background-color:#831717}
+.Poison{background-color:#7921c2}
+.Ground{background-color:#ceb669}
+.Flying{background-color:#a494df}
+.Psychic{background-color:#e065cc}
+.Bug{background-color:#9cc954}
+.Rock{background-color:#bda052}
 .Ghost{background-color:#603d88}
 .Dragon{background-color:#4715ff}
 .Dark{background-color:#383025}
