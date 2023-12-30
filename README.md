@@ -1,1 +1,1 @@
-Easy Pokemone Dual Type Chart
+Easy Pokemon Dual Type Chart
