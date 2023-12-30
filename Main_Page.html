@@ -1,31 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <style>
-    body {
-      font-family: Verdana;
-    }
-    .button {
-      background-color: #02cc82; /* Green */
-      border: none;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-    table {
-    width: 200px;
-    border: 1px black solid;
-    }
-
-    td {
-      border: 1px gray solid;
-    }
-  </style>
+  <link rel="stylesheet" href="colors.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="typeout.js"></script>
 </head>
@@ -74,8 +49,9 @@
       <option style="background-color:#383025" value=15>Dark</option>
       <option style="background-color:#9b9db1" value=16>Steel</option>
       <option style="background-color:#f1a4d1" value=17>Fairy</option>
-    </select><br><button id="enter", class="button", onclick="Calculate()">Enter</button>
 
+
+    </select><br><button id="enter" class="button">Enter</button>
     <table id="typeTable"></table>
 
 </body>

@@ -25,27 +25,57 @@ let type_chart = [
 //document.form1.submit();
 
 
-var myList = [["Normal","b0"],["Fire","b1"],["Water","b2"],["Grass","Electric"]];
-var html = "";
-
 var types = ["Normal", "Fire","Water","Grass","Electric","Ice","Fighting","Poison",
 "Ground","Flying","Psychic","Bug","Rock","Ghost","Dragon","Dark","Steel","Fairy"];
+
+
+// create table
+var html = "";
+$(document).ready(function(){
+    $.each(types, function(index,type){
+        html += "<tr>";
+        html += "<td class='" +type + "'>"+type+"</td>";
+        html += "<td id='effects' class='index" + index +"'>"+"  "+"</td>";
+        html += "</tr>";
+    });
+    $("#typeTable").html(html);
+  });
+
+  
+//update table 
 $(document).ready(function(){
     $("#enter").click(function(){
-        $("tbody #typeTable tr").remove();
         var first = document.querySelector('#first').value;
         var second = document.querySelector('#second').value;
+
         $.each(types, function(index,type){
-            html += "<tr>";
             var type1_effect = type_chart[index][first];
             var type2_effect = type_chart[index][second];
+
             var effect = type1_effect * type2_effect;
-            html += "<td>"+type+"</td>";
-            html += "<td>"+effect+"</td>";
-            html += "</tr>";
+
+            var indexName = ".index" + index;
+            if(effect == 1){
+                $(indexName).css("background-color","white");
+                $(indexName).css("color","black");
+            }
+            if(effect > 1){
+                $(indexName).css("background-color","#02cc82");
+                $(indexName).css("color","white");
+            }
+            if(effect < 1){
+                $(indexName).css("background-color","#e02424");
+                $(indexName).css("color","white");
+            }
+            if(effect == 0){
+                $(indexName).css("background-color","#1f242b");
+                $(indexName).css("color","white");
+            }
+            
+            $(indexName).html(effect);
         });
         
-        $("#typeTable").html(html);  
+        //$("#typeTable").html(html);  
           
     });
 });
