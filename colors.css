@@ -7,6 +7,10 @@ h1 {
     color: white;
     text-shadow: 0 0 5px #c08532;
 }
+.title{
+    font-size:40px;
+    line-height:5px;
+}
 
 .drop {
     text-shadow: 0 0 5px #c08532;
@@ -70,7 +74,7 @@ table {
     font-weight: bold;
     font-family: Verdana;
     border-collapse: separate;
-    font-size: 1.9em;
+    font-size: 1.6em;
     min-width: 300px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     border-spacing: 0

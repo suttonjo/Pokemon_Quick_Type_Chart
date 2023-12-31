@@ -5,27 +5,28 @@
 
 .toppane {
     width: 100%;
-    height: 100px;
+    height: 70px;
 }
 
 .leftpane {
     width: 25%;
-    height: 85vh;
+    height: 70vh;
     margin-left: 20px;
 }
 
 .middlepane {
     width: 50%;
-    height: 85vh;
+    height: 70vh;
 }
 
 .rightpane {
     width: 25%;
-    height: 85vh;
+    height: 70vh;
+    margin-right: 20px;
 }
 
 body {
-    margin: 0 !important;
+    margin: 0;
 }
 
 .d-flex {

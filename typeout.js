@@ -32,7 +32,6 @@ var types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", 
 // create table
 var html = "";
 $(document).ready(function () {
-    html += "<caption>ATTACKING</caption>"
     $.each(types, function (index, type) {
         html += "<tr>";
         html += "<td class='" + type + "'>" + type + "</td>";

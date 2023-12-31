@@ -1082,11 +1082,5 @@ let pokemon = [
     ["Paldean Combat Tauros",3,6],
     ["Paldean Blaze Tauros",3,6],
     ["Paldean Aqua Tauros",3,6],
-    ["Paldean Wooper",3,6],
-    
-    
-
+    ["Paldean Wooper",3,6]
 ]
-
-var types = [0, 1, 2, 3, 4, 5, 6, 7,
-    8, 9, 10, 11, 12, 13, 14, 15, 16, 17];
