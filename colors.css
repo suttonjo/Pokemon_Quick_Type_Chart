@@ -2,6 +2,21 @@ body {
     font-family: Verdana;
     background-color: #253a3a;
 }
+.outTable{
+    width:60px;
+    height: 50px;
+}
+img {
+    float: left;
+    width:  90px;
+    height: 90px;
+    object-fit: cover;
+  }
+.desc{
+    font-family: Verdana;
+    font-size:15px;
+    text-align:center;
+}
 
 h1 {
     color: white;
@@ -67,7 +82,7 @@ option {
     line-height: 30px;
 }
 
-table {
+#typeTable {
     margin-left: auto;
     margin-right: auto;
     color: white;
