@@ -1,63 +1,81 @@
 <!DOCTYPE html>
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"  content="width=device-width">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="sectioning.css">
   <title>Type Calculator</title>
   <link rel="icon" href="logo.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="typeout.js"></script>
-</head>
+  <script type="text/javascript" src="pokemon_list.js"></script>
+  <script type="text/javascript" src="possibleMatch.js"></script>
 
 <body>
-  <h1>DEFENDING</h1>
-  <label style="color:white" for="type 1">Type 1:</label>
-    <select  class="drop" id="first" name="first">
-      <option class="Normal" value=0>Normal</option>
-      <option class="Fire" value=1>Fire</option>
-      <option class="Water" value=2>Water</option>
-      <option class="Grass" value=3>Grass</option>
-      <option class="Electric" value=4>Electric</option>
-      <option class="Ice" value=5>Ice</option>
-      <option class="Fighting" value=6>Fighting</option>
-      <option class="Poison" value=7>Poison</option>
-      <option class="Ground" value=8>Ground</option>
-      <option class="Flying" value=9>Flying</option>
-      <option class="Psychic" value=10>Psychic</option>
-      <option class="Bug" value=11>Bug</option>
-      <option class="Rock" value=12>Rock</option>
-      <option class="Ghost" value=13>Ghost</option>
-      <option class="Dragon" value=14>Dragon</option>
-      <option class="Dark" value=15>Dark</option>
-      <option class="Steel" value=16>Steel</option>
-      <option class="Fairy" value=17>Fairy</option>
-    </select>
+  
 
-    <label style="color:white" for="type 2">Type 2:</label>
-    <select class="drop" id="second" name="second">
-      <option value=18>None</option>
-      <option class="Normal" value=0>Normal</option>
-      <option class="Fire" value=1>Fire</option>
-      <option class="Water" value=2>Water</option>
-      <option class="Grass" value=3>Grass</option>
-      <option class="Electric" value=4>Electric</option>
-      <option class="Ice" value=5>Ice</option>
-      <option class="Fighting" value=6>Fighting</option>
-      <option class="Poison" value=7>Poison</option>
-      <option class="Ground" value=8>Ground</option>
-      <option class="Flying" value=9>Flying</option>
-      <option class="Psychic" value=10>Psychic</option>
-      <option class="Bug" value=11>Bug</option>
-      <option class="Rock" value=12>Rock</option>
-      <option class="Ghost" value=13>Ghost</option>
-      <option class="Dragon" value=14>Dragon</option>
-      <option class="Dark" value=15>Dark</option>
-      <option class="Steel" value=16>Steel</option>
-      <option class="Fairy" value=17>Fairy</option>
-    </select>
+  <div class="container">
+    <div class="toppane">Test Page</div>
+    <div class="d-flex">
+      <div class="leftpane">
+        <h1>DEFENDING</h1>
+        <label style="color:white" for="type 1">Type 1:</label>
+        <select class="drop" id="first" name="first">
+          <option class="Normal" value=0>Normal</option>
+          <option class="Fire" value=1>Fire</option>
+          <option class="Water" value=2>Water</option>
+          <option class="Grass" value=3>Grass</option>
+          <option class="Electric" value=4>Electric</option>
+          <option class="Ice" value=5>Ice</option>
+          <option class="Fighting" value=6>Fighting</option>
+          <option class="Poison" value=7>Poison</option>
+          <option class="Ground" value=8>Ground</option>
+          <option class="Flying" value=9>Flying</option>
+          <option class="Psychic" value=10>Psychic</option>
+          <option class="Bug" value=11>Bug</option>
+          <option class="Rock" value=12>Rock</option>
+          <option class="Ghost" value=13>Ghost</option>
+          <option class="Dragon" value=14>Dragon</option>
+          <option class="Dark" value=15>Dark</option>
+          <option class="Steel" value=16>Steel</option>
+          <option class="Fairy" value=17>Fairy</option>
+        </select>
 
-    <button id="enter" class="button">Enter</button>
-    <table id="typeTable"></table>
+        <label style="color:white" for="type 2">Type 2:</label>
+        <select class="drop" id="second" name="second">
+          <option value=18>None</option>
+          <option class="Normal" value=0>Normal</option>
+          <option class="Fire" value=1>Fire</option>
+          <option class="Water" value=2>Water</option>
+          <option class="Grass" value=3>Grass</option>
+          <option class="Electric" value=4>Electric</option>
+          <option class="Ice" value=5>Ice</option>
+          <option class="Fighting" value=6>Fighting</option>
+          <option class="Poison" value=7>Poison</option>
+          <option class="Ground" value=8>Ground</option>
+          <option class="Flying" value=9>Flying</option>
+          <option class="Psychic" value=10>Psychic</option>
+          <option class="Bug" value=11>Bug</option>
+          <option class="Rock" value=12>Rock</option>
+          <option class="Ghost" value=13>Ghost</option>
+          <option class="Dragon" value=14>Dragon</option>
+          <option class="Dark" value=15>Dark</option>
+          <option class="Steel" value=16>Steel</option>
+          <option class="Fairy" value=17>Fairy</option>
+        </select>
+        <button id="enter" class="button">Enter</button>
+      </div>
+      <div class="middlepane">
+        <table id="typeTable"></table>
+      </div>
+      <div class="rightpane">
+        <h1>Possible Pokemon</h1>
+        <p id="result"></p>
+      </div>
+    </div>
+  </div>
 
 </body>
+
 </html>
