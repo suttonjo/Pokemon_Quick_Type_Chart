@@ -13,9 +13,9 @@ $(document).ready(function () {
                 matches.push(nameImg);
             }
         });
-        for (let i = 0; i < matches.length; i += 5) {
+        for (let i = 0; i < matches.length; i += 7) {
             table += "<tr>";
-            for(let j = i;j<i+5 && j <matches.length;j++){
+            for(let j = i;j<i+7 && j <matches.length;j++){
                 table += "<td class='outTable'> <img src='sprites/" + matches[j] + "' alt='" + names[j] + "'> <p class='desc'> "+ names[j] + "</p></td>";
             }
             table += "</tr>";
