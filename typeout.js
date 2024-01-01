@@ -21,10 +21,6 @@ let type_chart = [
 
 
 
-//document.getElementById('ans').value=parseInt(first) + parseInt(sec);
-//document.form1.submit();
-
-
 var types = ["Normal", "Fire", "Water", "Grass", "Electric", "Ice", "Fighting", "Poison",
     "Ground", "Flying", "Psychic", "Bug", "Rock", "Ghost", "Dragon", "Dark", "Steel", "Fairy"];
 
