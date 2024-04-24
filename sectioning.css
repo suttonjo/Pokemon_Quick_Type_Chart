@@ -9,19 +9,18 @@
 }
 
 .leftpane {
-    width: 25%;
+    width: 24%;
     height: 70vh;
     margin-left: 20px;
 }
 
 .middlepane {
-    width: 35%;
+    width: 30%;
     height: 70vh;
 }
 
 .rightpane {
     width: 40%;
-    height: 70vh;
     margin-right: 20px;
 }
 

@@ -8,8 +8,8 @@ body {
 }
 img {
     float: left;
-    width:  90px;
-    height: 90px;
+    width:  10vh;
+    height: auto;
     object-fit: cover;
   }
 .desc{
@@ -78,7 +78,6 @@ option {
 
 #result{
     color:white;
-    font-size: 20px;
     line-height: 30px;
 }
 
