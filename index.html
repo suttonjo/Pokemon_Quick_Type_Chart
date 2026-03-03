@@ -1,27 +1,29 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="colors.css">
   <link rel="stylesheet" href="sectioning.css">
-  <title>Type Calculator</title>
+  <title>Pokemon Type Calculator</title>
   <link rel="icon" href="logo.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script type="text/javascript" src="typeout.js"></script>
   <script type="text/javascript" src="pokemon_list.js"></script>
   <script type="text/javascript" src="possibleMatch.js"></script>
-
 </head>
-<body>
-  
 
+<body>
   <div class="container">
-    <div class="toppane"></div>
+    <div class="toppane">
+      <h1 class="main-title">Pokemon Type Effectiveness Calculator</h1>
+      <p class="subtitle">Select defending types to see attack effectiveness</p>
+    </div>
     <div class="d-flex">
       <div class="leftpane">
-        <h1>DEFENDING</h1>
-        <label style="color:white" for="type 1">Type 1:</label>
+        <h1>Defending</h1>
+        <label for="first">Type 1:</label>
         <select class="drop" id="first" name="first">
           <option class="Normal" value=0>Normal</option>
           <option class="Fire" value=1>Fire</option>
@@ -43,7 +45,7 @@
           <option class="Fairy" value=17>Fairy</option>
         </select>
 
-        <label style="color:white" for="type 2">Type 2:</label>
+        <label for="second">Type 2:</label>
         <select class="drop" id="second" name="second">
           <option value=18>None</option>
           <option class="Normal" value=0>Normal</option>
@@ -65,10 +67,28 @@
           <option class="Steel" value=16>Steel</option>
           <option class="Fairy" value=17>Fairy</option>
         </select>
-        <button id="enter" class="button">Enter</button>
+        <button id="enter" class="button">Calculate</button>
       </div>
       <div class="middlepane">
-        <h1 style='text-align:center'>ATTACKING</h1>
+        <h1>Attacking</h1>
+        <div class="legend">
+          <div class="legend-item">
+            <span class="legend-color super-effective"></span>
+            <span class="legend-text">Super Effective (2x+)</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color not-effective"></span>
+            <span class="legend-text">Not Very Effective</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color no-effect"></span>
+            <span class="legend-text">No Effect (0x)</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color normal"></span>
+            <span class="legend-text">Normal (1x)</span>
+          </div>
+        </div>
         <table id="typeTable"></table>
       </div>
       <div class="rightpane">
@@ -77,7 +97,6 @@
       </div>
     </div>
   </div>
-
 </body>
 
 </html>

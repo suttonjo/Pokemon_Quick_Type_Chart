@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("#enter").click(function () {
-        var table = "";
+        var container = "";
         var matches = [];
         var names = [];
         var first = document.querySelector('#first').value;
@@ -13,14 +13,20 @@ $(document).ready(function () {
                 matches.push(nameImg);
             }
         });
-        for (let i = 0; i < matches.length; i += 7) {
-            table += "<tr>";
-            for(let j = i;j<i+7 && j <matches.length;j++){
-                table += "<td class='outTable'> <img src='sprites/" + matches[j] + "' alt='" + names[j] + "'> <p class='desc'> "+ names[j] + "</p></td>";
+        
+        if (matches.length === 0) {
+            container = "<tr><td class='no-results'>No Pokemon found with this type combination</td></tr>";
+        } else {
+            for (let i = 0; i < matches.length; i++) {
+                container += "<tr><td class='pokemon-cell'>";
+                container += "<div class='pokemon-item'>";
+                container += "<img src='sprites/" + matches[i] + "' alt='" + names[i] + "'>";
+                container += "<p class='pokemon-name'>" + names[i] + "</p>";
+                container += "</div>";
+                container += "</td></tr>";
             }
-            table += "</tr>";
-
         }
-        $("#result").html(table);
+        
+        $("#result").html(container);
     });
 });
